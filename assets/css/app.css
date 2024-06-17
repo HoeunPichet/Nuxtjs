@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .text-color {
+        @apply text-sky-500;
+    }
+    .bg-color {
+        @apply bg-sky-500;
+    }
+    .animate-updown{
+        animation: updown infinite 2s linear;
+    }
+    @keyframes updown {
+        0%{
+            @apply translate-y-0;
+        }
+        50% {
+            @apply translate-y-5;
+        }
+    }
+}
+.router-link-active{
+    @apply text-sky-500 font-medium;
+}
