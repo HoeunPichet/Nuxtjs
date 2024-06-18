@@ -1,26 +1,22 @@
+@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+    body {
+        @apply bg-slate-800;
+    }
     .text-color {
-        @apply text-sky-500;
+        @apply text-white;
     }
     .bg-color {
-        @apply bg-sky-500;
-    }
-    .animate-updown{
-        animation: updown infinite 2s linear;
-    }
-    @keyframes updown {
-        0%{
-            @apply translate-y-0;
-        }
-        50% {
-            @apply translate-y-5;
-        }
+        @apply bg-primary-500;
     }
 }
 .router-link-active{
-    @apply text-sky-500 font-medium;
+    @apply font-medium text-white;
+}
+
+@layer components {
 }

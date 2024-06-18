@@ -9,7 +9,19 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "primary": {
+          "500": "#0ea5e9",
+        },
+      },
+      fontFamily: {
+        "oswald": ["Oswald", "sans-serif"],
+      },
+      maxWidth: {
+        "container": "1280px",
+      }
+    },
   },
   plugins: [],
 }
