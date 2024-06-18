@@ -33,11 +33,11 @@
             <!-- HTML -->
             <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
                 <div class="w-full h-56">
-                    <img src="~/assets/images/progamming/card-html.webp" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                    <img src="~/assets/images/programming/card-html.webp" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
                 </div>
                 <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
                     <div class="shrink-0 w-14 h-14">
-                        <img src="~/assets/images/progamming/icon-html.png" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
+                        <img src="~/assets/images/programming/icon-html.png" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
                     </div>
                     <dl class="flex flex-col">
                         <dt class="text-lg font-bold text-slate-900 font-oswald">HTML</dt>
@@ -48,11 +48,11 @@
             <!-- CSS -->
             <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
                 <div class="w-full h-56">
-                    <img src="~/assets/images/progamming/card-css.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                    <img src="~/assets/images/programming/card-css.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
                 </div>
                 <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
                     <div class="shrink-0 w-14 h-14">
-                        <img src="~/assets/images/progamming/icon-css.webp" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
+                        <img src="~/assets/images/programming/icon-css.webp" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
                     </div>
                     <dl class="flex flex-col">
                         <dt class="text-lg font-bold text-slate-900 font-oswald">CSS</dt>
@@ -63,17 +63,29 @@
             <!-- Javascript -->
             <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
                 <div class="w-full h-56">
-                    <img src="~/assets/images/progamming/card-js.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                    <img src="~/assets/images/programming/card-js.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
                 </div>
                 <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
                     <div class="shrink-0 w-14 h-14">
-                        <img src="~/assets/images/progamming/icon-js.png" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
+                        <img src="~/assets/images/programming/icon-js.png" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
                     </div>
                     <dl class="flex flex-col">
                         <dt class="text-lg font-bold text-slate-900 font-oswald">Javascript</dt>
                         <dd class="text-sm text-slate-600"><span class="font-medium">Knowledge:</span> DOM Manipulation, Event-Driven Programming, Asynchronous Programming, Object-Oriented Programming, etc.</dd>
                     </dl>
                 </div>
+            </div>
+        </article>
+    </section>
+    <!-- Advanced Programming Langauge Section -->
+    <section class="grid w-full grid-cols-1 mt-28 overflow-hidden bg-slate-200 h-[30rem] relative">
+        <article class="grid w-full grid-cols-2 mx-auto max-w-container">
+            <div class="flex flex-col gap-10 py-10">
+                <h1 class="text-4xl font-bold font-oswald text-slate-900">Introduction</h1>
+                <span class="text-lg text-slate-800">I'm <span class="font-medium text-slate-900">front-end developer</span>, also sometimes called a client-side developer, is the magician behind the curtain when it comes to websites and web applications. They are the ones who translate designs and ideas into the interactive experiences we see and use every day on our browsers.</span>
+            </div>
+            <div class="flex justify-end w-full">
+                <img src="~/assets/images/programming/developer.jpg" alt="Coding Developer">
             </div>
         </article>
     </section>
