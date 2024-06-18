@@ -1,40 +1,82 @@
 <template>
-    <div>
-        <section class="bg-slate-50 h-[35rem] overflow-hidden relative">
-            <div class="absolute right-24 top-28">
-                <img class="animate-updown" src="https://themes.the4.co/kalles-4/img/circle1.png" alt="">
+    <!-- Banner Section -->
+    <section class="bg-slate-950 h-[32rem] w-full overflow-hidden relative">
+        <img src="~/assets/images/banner/trading.jpg" class="absolute bottom-0 left-0 object-cover object-bottom w-full h-full opacity-20" loading="lazy" alt="Overview Banner">
+
+        <div class="relative flex flex-col items-center justify-center w-full h-full">
+            <svg class="text-banner">
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    Hello, everyone!
+                </text>
+            </svg>
+            <div class="flex justify-center">
+                <button type="button" class="hover:bg-slate-800 uppercase w-40 px-3 py-1.5 rounded-tl-md rounded-bl-md text-white border border-white font-medium">Information</button>
+                <button type="button" class="hover:bg-slate-800 uppercase w-40 px-3 py-1.5 rounded-tr-md rounded-br-md text-white border border-white font-medium flex justify-center items-center gap-2">
+                    <span>Contact me</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                    </svg>
+                </button>
             </div>
-            <div class="absolute -top-14 -left-24">
-                <img class="animate-updown" src="https://themes.the4.co/kalles-4/img/circle-2.png" alt="">
+            <div class="flex justify-center mt-8">
+                <p class="text-sm font-medium text-white">___ <span class="px-3">Pen by <span class="font-bold text-primary-500 font-oswald">Zire Frizzy</span></span> ___</p>
             </div>
-            <div class="absolute left-1/2 -bottom-[80%] -translate-x-1/2">
-                <img class="animate-updown" src="https://themes.the4.co/kalles-4/img/tablet_01.png" alt="">
-            </div>
-            <div class="absolute right-44 top-0">
-                <img class="animate-updown" src="https://themes.the4.co/kalles-4/img/mackbook.png" alt="">
-            </div>
-            <div class="absolute -right-20 -bottom-1/2">
-                <img class="animate-updown" src="https://themes.the4.co/kalles-4/img/tablet_02.png" alt="">
-            </div>
-            <div class="absolute right-6 top-4">
-                <img class="animate-updown" src="https://themes.the4.co/kalles-4/img/iphonex1.png" alt="">
-            </div>
-            <section class="absolute top-1/2 -translate-y-1/2 left-52 w-[30rem]">
-                <div class="text-4xl font-bold text-slate-600">True eCommerce Theme for Electronic store and more.</div>
-                <div class="mt-5">
-                    <span class="text-slate-400 text-lg">Whatever you’re selling, Kalles is the only Shopify theme you’ll need to build a robust online store that provides a smooth and seamless shopping experience for your consumers.</span>
+        </div>
+    </section>
+    <!-- Basic Programming Langauge Section -->
+    <section class="grid w-full grid-cols-1 mt-16">
+        <dl class="flex flex-col items-center justify-center w-full gap-5 p-5">
+            <dt class="text-5xl font-bold text-center text-white font-oswald">Basic Coding</dt>
+            <dd class="max-w-3xl text-base font-medium text-center text-slate-400">The basic coding concepts include variable declaration, basic control structures, data structures, object-oriented programming, troubleshooting and debugging, and various programming tools.</dd>
+        </dl>
+        <article class="grid w-full grid-cols-3 gap-5 mx-auto mt-5 max-w-container">
+            <!-- HTML -->
+            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
+                <div class="w-full h-56">
+                    <img src="~/assets/images/progamming/card-html.webp" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
                 </div>
-                <div class="mt-5 flex gap-5">
-                    <button type="button" class="text-white bg-color rounded-full px-10 py-2">
-                        <span class="text-xl font-medium">Explore now</span>
-                    </button>
-                    <button type="button" class="text-color border-2 border-sky-500 rounded-full px-10 py-2">
-                        <span class="text-xl font-medium">Go shopping</span>
-                    </button>
+                <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
+                    <div class="shrink-0 w-14 h-14">
+                        <img src="~/assets/images/progamming/icon-html.png" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
+                    </div>
+                    <dl class="flex flex-col">
+                        <dt class="text-lg font-bold text-slate-900 font-oswald">HTML</dt>
+                        <dd class="text-sm text-slate-600"><span class="font-medium">Knowledge:</span> Define Document Structure, Embed Multimedia, Create Interactive Elements, Link Pages Together, etc.</dd>
+                    </dl>
                 </div>
-            </section>
-        </section>
-    </div>
+            </div>
+            <!-- CSS -->
+            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
+                <div class="w-full h-56">
+                    <img src="~/assets/images/progamming/card-css.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                </div>
+                <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
+                    <div class="shrink-0 w-14 h-14">
+                        <img src="~/assets/images/progamming/icon-css.webp" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
+                    </div>
+                    <dl class="flex flex-col">
+                        <dt class="text-lg font-bold text-slate-900 font-oswald">CSS</dt>
+                        <dd class="text-sm text-slate-600"><span class="font-medium">Knowledge:</span> Style Elements, Separation of Concerns, Responsive Design, Layout and Positioning, Accessibility, etc.</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- Javascript -->
+            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
+                <div class="w-full h-56">
+                    <img src="~/assets/images/progamming/card-js.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                </div>
+                <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
+                    <div class="shrink-0 w-14 h-14">
+                        <img src="~/assets/images/progamming/icon-js.png" loading="lazy" class="object-cover w-full h-full rounded-full" alt="Javascript Logo">
+                    </div>
+                    <dl class="flex flex-col">
+                        <dt class="text-lg font-bold text-slate-900 font-oswald">Javascript</dt>
+                        <dd class="text-sm text-slate-600"><span class="font-medium">Knowledge:</span> DOM Manipulation, Event-Driven Programming, Asynchronous Programming, Object-Oriented Programming, etc.</dd>
+                    </dl>
+                </div>
+            </div>
+        </article>
+    </section>
 </template>
 
 <script setup>
