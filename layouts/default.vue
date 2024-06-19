@@ -15,7 +15,7 @@
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
                             <nuxt-link class="relative" to="/photography">
                                 <span class="px-5 py-2">Photography</span>
-                                <div class="absolute -top-3 -right-1 text-[10px] bg-sky-500 text-white font-medium rounded-full px-2 flex items-center h-4">New</div>
+                                <div class="absolute -top-3 -right-1 text-[10px] bg-sky-700 text-slate-100 font-medium rounded-full px-2 flex items-center h-4">New</div>
                             </nuxt-link>
                         </li>
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
@@ -43,14 +43,13 @@
             <slot />
         </main>
 
-        <footer class="mt-5">
-
-        </footer>
+        <Footer />
     </div>
 </template>
 
 <script setup>
-    import myLogo from '~/assets/images/logo/logo.png'; // Import using the tilde (~) for root directory
+    import myLogo from "~/assets/images/logo/logo.png"; // Import using the tilde (~) for root directory
+    import Footer from "~/components/Footer"; // Import Footer
 
     const logoUrl = myLogo; // Assign the imported module to a variable
 

@@ -6,10 +6,10 @@ svg.text-banner {
 	width: 100%;
 }
 svg.text-banner text {
+	@apply text-4xl sm:text-[4rem] md:text-[6.75rem];
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
 	stroke: #f8f8f8;
-	font-size: 100px;
 }
 @keyframes stroke {
 	0%   {
