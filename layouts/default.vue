@@ -10,22 +10,22 @@
                 <nav>
                     <ul class="header-navigation flex items-center font-medium text-slate-400 gap-2 text-[15px] relative" @mouseleave="removeActiveBar">
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
-                            <nuxt-link class="px-5 py-2" to="/">Overview</nuxt-link>
+                            <nuxt-link class="px-5 py-2 font-kanit" to="/">Overview</nuxt-link>
                         </li>
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
                             <nuxt-link class="relative" to="/photography">
-                                <span class="px-5 py-2">Photography</span>
+                                <span class="px-5 py-2 font-kanit">Photography</span>
                                 <div class="absolute -top-3 -right-1 text-[10px] bg-sky-700 text-slate-100 font-medium rounded-full px-2 flex items-center h-4">New</div>
                             </nuxt-link>
                         </li>
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
-                            <nuxt-link class="px-5 py-2" to="/feature">Feature</nuxt-link>
+                            <nuxt-link class="px-5 py-2 font-kanit" to="/feature">Feature</nuxt-link>
                         </li>
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
-                            <nuxt-link class="px-5 py-2" to="/about">About</nuxt-link>
+                            <nuxt-link class="px-5 py-2 font-kanit" to="/about">About</nuxt-link>
                         </li>
                         <li class="rounded-full hover:text-white" @mouseover="activeRoute">
-                            <nuxt-link class="px-5 py-2" to="/contact">Contact</nuxt-link>
+                            <nuxt-link class="px-5 py-2 font-kanit" to="/contact">Contact</nuxt-link>
                         </li>
                     </ul>
                 </nav>

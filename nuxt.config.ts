@@ -28,7 +28,8 @@ export default defineNuxtConfig({
 
   css: [
     '~/assets/css/app.css',
-    '~/assets/css/components/animation.css'
+    '~/assets/css/components/font.css',
+    '~/assets/css/components/animation.css',
   ],
 
   postcss: {

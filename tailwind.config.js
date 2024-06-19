@@ -17,6 +17,8 @@ module.exports = {
       },
       fontFamily: {
         "oswald": ["Oswald", "sans-serif"],
+        "russo": ["Russo One", "sans-serif"],
+        "kanit": ["Kanit", "sans-serif"],
       },
       maxWidth: {
         "container": "1280px",

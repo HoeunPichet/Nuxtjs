@@ -49,7 +49,7 @@
     <section class="grid w-full grid-cols-1 px-5 mt-16 mb-10">
         <dl class="flex flex-col items-center justify-center w-full gap-5 p-5">
             <dt class="text-5xl font-bold text-center text-white font-oswald">Basic Coding</dt>
-            <dd class="max-w-3xl text-base font-medium text-center text-slate-400">The basic coding concepts include variable declaration, basic control structures, data structures, object-oriented programming, troubleshooting and debugging, and various programming tools.</dd>
+            <dd class="max-w-3xl text-base text-center font-kanit text-slate-400">The basic coding concepts include variable declaration, basic control structures, data structures, object-oriented programming, troubleshooting and debugging, and various programming tools.</dd>
         </dl>
         <article class="grid w-full gap-8 mx-auto mt-5 sm:grid-cols-2 lg:grid-cols-3 max-w-container">
             <!-- HTML -->
@@ -98,6 +98,10 @@
                 </div>
             </div>
         </article>
+    </section>
+    <!-- Framework Section -->
+    <section>
+        
     </section>
 </template>
 
