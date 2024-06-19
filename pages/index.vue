@@ -29,11 +29,11 @@
             <dt class="text-5xl font-bold text-center text-white font-oswald">Basic Coding</dt>
             <dd class="max-w-3xl text-base font-medium text-center text-slate-400">The basic coding concepts include variable declaration, basic control structures, data structures, object-oriented programming, troubleshooting and debugging, and various programming tools.</dd>
         </dl>
-        <article class="grid w-full grid-cols-3 gap-5 mx-auto mt-5 max-w-container">
+        <article class="grid w-full grid-cols-3 gap-8 mx-auto mt-5 max-w-container">
             <!-- HTML -->
-            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
+            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400 fade-up" style="--delay: 0ms;">
                 <div class="w-full h-56">
-                    <img src="~/assets/images/programming/card-html.webp" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                    <img src="~/assets/images/programming/card-html.webp" loading="lazy" class="object-cover w-full h-full transition-all hover:scale-110" alt="Javascript">
                 </div>
                 <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
                     <div class="shrink-0 w-14 h-14">
@@ -46,9 +46,9 @@
                 </div>
             </div>
             <!-- CSS -->
-            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
+            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400 fade-up" style="--delay: 200ms;">
                 <div class="w-full h-56">
-                    <img src="~/assets/images/programming/card-css.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                    <img src="~/assets/images/programming/card-css.png" loading="lazy" class="object-cover w-full h-full transition-all hover:scale-110" alt="Javascript">
                 </div>
                 <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
                     <div class="shrink-0 w-14 h-14">
@@ -61,9 +61,9 @@
                 </div>
             </div>
             <!-- Javascript -->
-            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400">
+            <div class="relative flex flex-col w-full pb-16 overflow-hidden border rounded-xl border-slate-400 fade-up" style="--delay: 400ms;">
                 <div class="w-full h-56">
-                    <img src="~/assets/images/programming/card-js.png" loading="lazy" class="object-cover w-full h-full" alt="Javascript">
+                    <img src="~/assets/images/programming/card-js.png" loading="lazy" class="object-cover w-full h-full transition-all hover:scale-110" alt="Javascript">
                 </div>
                 <div class="absolute bottom-0 left-0 flex gap-5 p-3 bg-white rounded-tl-3xl rounded-tr-3xl">
                     <div class="shrink-0 w-14 h-14">
@@ -77,22 +77,38 @@
             </div>
         </article>
     </section>
-    <!-- Advanced Programming Langauge Section -->
-    <section class="grid w-full grid-cols-1 mt-28 overflow-hidden bg-slate-200 h-[30rem] relative">
-        <article class="grid w-full grid-cols-2 mx-auto max-w-container">
-            <div class="flex flex-col gap-10 py-10">
-                <h1 class="text-4xl font-bold font-oswald text-slate-900">Introduction</h1>
-                <span class="text-lg text-slate-800">I'm <span class="font-medium text-slate-900">front-end developer</span>, also sometimes called a client-side developer, is the magician behind the curtain when it comes to websites and web applications. They are the ones who translate designs and ideas into the interactive experiences we see and use every day on our browsers.</span>
+    <!-- Introduction Section -->
+    <section class="relative grid w-full grid-cols-1 overflow-hidden mt-28 bg-slate-700">
+        <article class="grid w-full grid-cols-2 py-10 mx-auto max-w-container">
+            <div class="flex flex-col justify-center gap-5 px-10">
+                <h1 class="text-5xl font-bold text-white font-oswald">Introduction</h1>
+                <span class="text-lg text-slate-400">A <span class="font-medium text-primary-500">front-end developer (FED)</span>, also sometimes called a client-side developer, is the magician behind the curtain when it comes to websites and web applications. They are the ones who translate designs and ideas into the interactive experiences we see and use every day on our browsers.</span>
+                <div class="flex flex-col w-full">
+                    <h2 class="text-lg font-medium text-white">Here's a breakdown of what front-end developers typically do:</h2>
+                    <ul class="pl-5 text-base text-slate-400">
+                        <li class="before:content-['→_']">Building the User Interface (UI)</li>
+                        <li class="before:content-['→_']">Ensuring Functionality and Responsiveness</li>
+                        <li class="before:content-['→_']">Collaboration and Communication</li>
+                        <li class="before:content-['→_']">Tools of the Trade</li>
+                        <li class="before:content-['→_']">Skills and Qualities</li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex justify-end w-full">
-                <img src="~/assets/images/programming/developer.jpg" alt="Coding Developer">
+            <div class="flex items-center justify-center w-full">
+                <img src="~/assets/images/programming/developer.png" class="w-4/5 animate-updown" alt="Coding Developer">
             </div>
         </article>
     </section>
 </template>
 
 <script setup>
+    import { myAnimation } from "~/assets/types/animation"
 
+    onMounted(() => {
+        window.addEventListener("scroll", () => {
+            myAnimation()
+        });
+    });
 </script>
 
 <style lang="scss" scoped>
